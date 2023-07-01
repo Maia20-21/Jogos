@@ -94,7 +94,7 @@
   .banner .bg{
     position: relative;
     width: 100%;
-    min-width: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,12 +105,12 @@
     height: 100%;
   }
   .banner .bg .content h2 {
-    font-size: 3em;
+    font-size: 4em;
     color: aliceblue;
     letter-spacing: 1px;
   }  
   .banner .bg .content p {
-    font-size: 4em;
+    font-size: 1em;
     color:aliceblue
     letter-spacing: 1px;
   
