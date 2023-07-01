@@ -222,7 +222,8 @@ h2 {
 }
 
 .trigger-input:checked+.trigger-wrapper .faq-titulo {
-  color: rgb(209, 145, 237)
+  color: aqua;
+  text-shadow: 0 0 10px #1aeeef;
 }
 
 .trigger-input:checked+.trigger-wrapper .faq-titulo:after {
