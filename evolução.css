@@ -127,14 +127,14 @@ h2 {
   max-width: 100%;
 }
 
-/* criar divs para cada anos - wapper */
+/* criar divs para cada anos - wapper*/
 .wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-
+/* depois criar uma div para geral e colocar display: flex */
 
 
 .lista-item {
