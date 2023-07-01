@@ -83,6 +83,9 @@
   }
   /* Home Banner */
   .banner{
+    margin: 100px;
+  }
+  .banner{
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -142,11 +145,22 @@
     width: 600px;
   }
   /* about */
+  .about{
+    .about {
+      position: relative;
+      width: 100%;
+      min-height: 75vh;
+      padding: 0px 300px;
+      display: flex;
+      align-items: center;
+    }
+    
+  }
   .about {
     position: relative;
-    width: 100;
+    width: 100px;
     min-height: 75vh;
-    padding: 0px 100px;
+    padding: 0px 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -163,7 +177,7 @@
     color: aliceblue;
   }
   .about  .contentBx p{
-    max-width: 600px;
+    max-width: 100%;
     text-align: justify;
     color: aliceblue;
   
