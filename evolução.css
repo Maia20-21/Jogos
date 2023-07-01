@@ -129,7 +129,45 @@ h2 {
 
 /* criar divs para cada anos - wapper*/
 .wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.wrapperr {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.um {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dois {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tres {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quatro {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cinco {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.seis {
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -170,8 +208,8 @@ h2 {
   padding: 10px;
   font-family: 'Courier New', Courier, monospace;
   line-height: 1.4em;
-  display: none;
-
+  visibility: hidden;
+  max-height: 1px;
 }
 
 .trigger-input {
@@ -179,7 +217,8 @@ h2 {
 }
 
 .trigger-input:checked+.trigger-wrapper .faq-conteudo {
-  display: block;
+  visibility: visible;
+  max-height: fit-content;
 }
 
 .trigger-input:checked+.trigger-wrapper .faq-titulo {
