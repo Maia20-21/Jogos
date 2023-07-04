@@ -32,7 +32,7 @@ html {
 header {
     background-color: #2d0566;
     width: 100%;
-    padding: 40px 4%;
+    padding: 50px 4%;
     position: fixed;
     top: 0 left: 0;
     transition: 0.4s;
