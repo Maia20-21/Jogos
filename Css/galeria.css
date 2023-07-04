@@ -83,7 +83,7 @@ body {
     padding: 0;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(72deg, aqua 1%, #442075 99%);
+    background: linear-gradient(72deg, rgb(77, 219, 219) 1%, #442075 99%);
 }
 
 
