@@ -13,7 +13,7 @@ body {
 }
 
 html {
-  height: 500vh;
+  height: 100vh;
 }
 
 .container {
@@ -27,6 +27,7 @@ html {
   align-items: center;
   justify-content: space-between;
 }
+
 
 header {
   width: 100%;
