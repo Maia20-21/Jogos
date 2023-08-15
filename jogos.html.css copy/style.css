@@ -21,7 +21,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2d0556 
+  background-color: #442075;
   transition: 0.5s;
   z-index: 100;
   
@@ -279,7 +279,7 @@ header .action .searchBx input{
   border-radius: 10px;
   background: #1aeeef;
   box-shadow: 0 0 10px #1aeeef;
-  transform: scaleX(0)
+  transform: scaleX(1)
   transform-origin: left;
   animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
 }
@@ -321,7 +321,7 @@ header .action .searchBx input{
   background: #200e39;
   border: none;
   color: aqua;
-  box-shadow: 0 0px aliceblue;
+  box-shadow: 0 0 10px aliceblue;
 }
 .games .cardBx .card.hide{
   display: none;
