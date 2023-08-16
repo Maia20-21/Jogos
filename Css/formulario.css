@@ -1,0 +1,180 @@
+body {
+    background-color: #442075;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    border-radius: 10px;
+    align-items: center;
+    
+  }
+
+  /* menu */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace
+  }
+  
+  html {
+    height: 150vh;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: auto;
+  
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header {
+    width: 60%;
+    padding: 50px 4%;
+    position: fixed;
+    top: 0 left: 0;
+    transition: 0.4s;
+  }
+  
+  header.rolagem {
+    background-color: #2d0566;
+    padding: 30px 4%;
+  
+  }
+  
+  header.rolagem a, header.rolagem i {
+  color: aliceblue;
+  }
+  
+  
+  
+  header i {
+    font-size: 30px;
+    color: #f0f8ff;
+  }
+  
+  header ul {
+    list-style-type: none;
+  }
+  
+  header ul li {
+    display: inline-block;
+    margin: 0 45px;
+  }
+  
+  header ul li a {
+    color: aliceblue;
+    text-decoration: none;
+  }
+  
+  nav a{
+    position: relative
+  }
+  
+  nav a::after {
+  content: " ";
+  width: 0%;
+  height: 1px;
+  background-color: aliceblue; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+  }
+  
+  nav a:hover::after {
+    width: 30%;
+  }
+:root{
+   --color-white #fff;
+   --color-red: #e63636;
+   --color-dark1: #1e1e1e
+   --color-dark2: #1e1e1e
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.content{
+  background-color:#2d0566;
+  padding: 10px 45px;
+  border-radius: 10px;
+  width: 600px;
+  overflow: auto;
+
+}
+h1{
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.content form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem ;
+}
+.span-requered{
+  display: none;
+}
+.inputs{
+  padding: 8px 5px;
+  outline: none;
+  border-radius: 2px;
+  background-color: #f0f8ff;
+  border: 2px solid black;
+  color: black;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.inputs:focus{
+  border-color: black;
+}
+.box-select{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+ .box-select p{
+  width: 10px;
+ }
+.box-select label{
+  margin-left: 1rem;
+}
+.experiencias-heading {
+  margin-top: 20px;
+}
+
+button[type="submit"]{
+  padding: 1rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  background-color: aliceblue;
+  color: #2d0566;
+  cursor: pointer;
+  transition: .3s;
+}
+button[type="submit"]:hover{
+  background-color:black
+}
+@media screen and (max-width: 576px){
+  .box-select{
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+
+
+  

@@ -9,11 +9,12 @@
    </head>
    <body>
       <header>
-         <a href="#" class="logo">Gamers</a>
+         <a href="jogos.html.css copy" class="logo">Gamers</a>
          <ul class="nav">
             <li><a href="/Evolução.html">Home</a></li>
             <li><a href="/galeria.html">Galeria de Fotos </a></li>
-            <li><a href="/jogos.html.css/index.html">Ficha técnica</a></li>
+            <li><a href="/jogos.html.css copy/index.html"> Jogos </a></li>
+            <li><a href="/contatos.html"> Contato </a></li>
          </ul>
          <div class="action">
             <div class="searchBx">
@@ -47,7 +48,7 @@
            <p>A história dos jogos digitais teve início quando os acadêmicos começaram a projetar jogos simples, simuladores e programas de inteligência artificial, como parte de suas pesquisas em ciência da computação. Somente a partir das décadas de 1970 e 1980 é que os jogos eletrônicos se tornaram populares, quando jogos de arcade, console de jogos eletrônicos e jogos de computador foram introduzidos ao público em geral. Desde então, os jogos eletrônicos tornaram-se uma forma popular de entretenimento e uma parte da cultura moderna em diversas regiões do mundo.</p>
            <a href="#">Read More</a>
          </div>
-         <img src="imagens/imagem.19.html" alt="Imagens do jogos eletronicos" width="400px">
+         <img src="imagens/imagem.02.jpg" alt="Imagens do jogos eletronicos" width="400px">
        </div>
        
 
@@ -188,6 +189,40 @@
       </div>
       </div>
       </div>
+     <script>
+      /* Sticky Navbar */
+      window.addEventListener('scroll', function(){
+         var header = document.querySelector('header');
+         header.classList.toggle('sticky',window.scrollY > 0);
+      });
+      /* Filterable Cards */
+      Let list = document.querySelector('.list');
+      Let card = document.querySelector ('.card');
+
+      for(Let i = 0; i<list.length; i++){
+         list[i].addEventListener('click', function(){
+           for (let j=0; j<list.length; j++){
+            list[j].classList.remove('active');
+           }) 
+           this.classList.add('active');
+
+           Let dataFilter = this.getAttribute('data-filter');
+
+           for( Let k=0; k<card.length; k++)
+           {
+              card[k].classList.remove('active');
+              card[k].classList.add('hide');
+
+              if(card[k].getAttribute('data-item') == dataFilter || dataFilter =='all')
+              card[k].classList.remove('hide');
+              card[k].classList.add('active');
+           }
+         }
+      }
+
+   
+
+     </script>
       <!-- tournaments-->
       <div class="tournaments" id="tournaments">
          <h2>Live </h2>
